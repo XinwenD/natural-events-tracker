@@ -1,7 +1,19 @@
 @import url("components/DisasterSelector/style.css");
 @import url("components/Header/style.css");
+@import url("components/Disasters/Drought/style.css");
+@import url("components/Disasters/DustAndHaze/style.css");
 @import url("components/Disasters/Wildfire/style.css");
+@import url("components/Disasters/Floods/style.css");
+@import url("components/Disasters/SevereStorms/style.css");
 @import url("components/Disasters/Volcanoes/style.css");
+@import url("components/Disasters/WaterColor/style.css");
+@import url("components/Disasters/Landslides/style.css");
+@import url("components/Disasters/SeaAndLakeIce/style.css");
+@import url("components/Disasters/Earthquakes/style.css");
+@import url("components/Disasters/Snow/style.css");
+@import url("components/Disasters/TemperatureExtremes/style.css");
+@import url("components/Disasters/Manmade/style.css");
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;

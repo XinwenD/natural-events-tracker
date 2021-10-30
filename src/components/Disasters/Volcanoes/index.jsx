@@ -4,7 +4,7 @@ import FireIcon from "@iconify/icons-mdi/fire-alert";
 
 const Volcanoes = ({ lat, lng, onClick }) => {
   return (
-    <div className="volcanoes-marker" onClick={onClick}>
+    <div className="volcanoes" onClick={onClick}>
       <Icon icon={FireIcon} className="volcanoes-icon" />
     </div>
   );

@@ -1,7 +1,7 @@
-.wildfire {
+.earthquakes {
   display: none;
 }
-.wildfire .wildfire-icon {
+.earthquakes .earthquakes-icon {
   font-size: 2rem;
   color: red;
 }

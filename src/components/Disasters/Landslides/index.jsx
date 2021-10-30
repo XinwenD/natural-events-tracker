@@ -1,9 +1,11 @@
 import React from "react";
+import { Icon } from "@iconify/react";
+import FireIcon from "@iconify/icons-mdi/fire-alert";
 
-const Landslides = () => {
+const Landslides = ({ lat, lng, onClick }) => {
   return (
-    <div>
-      <h1>landslides</h1>
+    <div className="landslides" onClick={onClick}>
+      <Icon icon={FireIcon} className="landslides-icon" />
     </div>
   );
 };

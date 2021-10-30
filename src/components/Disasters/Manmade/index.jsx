@@ -1,9 +1,11 @@
 import React from "react";
+import { Icon } from "@iconify/react";
+import FireIcon from "@iconify/icons-mdi/fire-alert";
 
-const Manmade = () => {
+const Manmade = ({ lat, lng, onClick }) => {
   return (
-    <div>
-      <h1>manmade</h1>
+    <div className="manmade" onClick={onClick}>
+      <Icon icon={FireIcon} className="manmade-icon" />
     </div>
   );
 };

@@ -1,7 +1,7 @@
-.wildfire {
+.severe-storms {
   display: none;
 }
-.wildfire .wildfire-icon {
+.severe-storms .severe-storms-icon {
   font-size: 2rem;
   color: red;
 }

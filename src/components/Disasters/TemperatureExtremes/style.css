@@ -1,0 +1,7 @@
+.temperature-extremes {
+  display: none;
+}
+.temperature-extremes .temperature-extremes-icon {
+  font-size: 2rem;
+  color: red;
+}
