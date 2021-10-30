@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1>
-        <Icon icon={locationIcon} /> Wildfire Tracker (Powered by NASA)
+        <Icon icon={locationIcon} /> Natural Events Tracker (Powered by NASA)
       </h1>
     </header>
   );

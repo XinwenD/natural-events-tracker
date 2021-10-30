@@ -1,24 +1,26 @@
-@import url("components/DisasterSelector/style.css");
-@import url("components/Header/style.css");
-@import url("components/Disasters/Wildfire/style.css");
-@import url("components/Disasters/Volcanoes/style.css");
+@import url("./components/DisasterSelector/style.css");
+@import url("./components/Header/style.css");
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
+  .app-container {
+    position: relative;
+  }
 }
-body .app-container {
-  position: relative;
-}
+
 .map-container {
   width: 100vw;
   height: 100vh;
   position: relative;
 }
-.wildfire-icon {
-  font-size: 10px;
+
+.location-icon {
+  font-size: 2 rem;
   color: red;
 }
+
 .location-info {
   position: absolute;
   top: 80px;

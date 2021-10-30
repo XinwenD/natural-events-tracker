@@ -1,0 +1,7 @@
+.wildfire-marker {
+  display: none;
+}
+.wildfire-marker .wildfire-icon {
+  font-size: 2rem;
+  color: red;
+}

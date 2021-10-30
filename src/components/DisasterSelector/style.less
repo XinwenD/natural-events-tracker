@@ -1,0 +1,50 @@
+.disaster-selector {
+  position: absolute;
+  display: block;
+  top: 100px;
+  left: 50px;
+  z-index: 100;
+  width: 300px;
+  max-height: 45px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  padding: 10px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  &:hover {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+    cursor: pointer;
+  }
+  h1 {
+    height: 21px;
+    margin: 13px 0;
+    font-size: large;
+    color: white;
+    text-align: center;
+  }
+  .categories {
+    margin-top: 20px;
+    list-style-type: none;
+    color: white;
+    padding-left: 10px;
+    li {
+      padding: 1px 0;
+      input {
+        margin-right: 7px;
+      }
+    }
+  }
+  // .button-container {
+  //   text-align: right;
+  //   padding: 0 5px;
+  //   .collapse-button {
+  //     background-color: rgb(0, 190, 247);
+  //     border: none;
+  //     border-radius: 5px;
+  //     padding: 5px 10px;
+  //     font-weight: 700;
+  //     right: 10px;
+  //   }
+  // }
+}
