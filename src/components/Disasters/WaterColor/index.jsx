@@ -1,11 +1,11 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import FireIcon from "@iconify/icons-mdi/fire-alert";
+import WaterIcon from "@iconify/icons-mdi/water-opacity";
 
 const WaterColor = ({ lat, lng, onClick }) => {
   return (
     <div className="water-color" onClick={onClick}>
-      <Icon icon={FireIcon} className="water-color-icon" />
+      <Icon icon={WaterIcon} className="water-color-icon" />
     </div>
   );
 };

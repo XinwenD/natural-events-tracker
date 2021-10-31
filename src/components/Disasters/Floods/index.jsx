@@ -1,11 +1,11 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-import FireIcon from "@iconify/icons-mdi/fire-alert";
+import FloodIcon from "@iconify/icons-mdi/waves-arrow-up";
 
 const Floods = ({ lat, lng, onClick }) => {
   return (
     <div className="floods" onClick={onClick}>
-      <Icon icon={FireIcon} className="floods-icon" />
+      <Icon icon={FloodIcon} className="floods-icon" />
     </div>
   );
 };

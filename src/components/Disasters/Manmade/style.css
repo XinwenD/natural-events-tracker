@@ -3,5 +3,8 @@
 }
 .manmade .manmade-icon {
   font-size: 2rem;
-  color: red;
+  color: firebrick;
+}
+.manmade .manmade-icon:hover {
+  cursor: pointer;
 }

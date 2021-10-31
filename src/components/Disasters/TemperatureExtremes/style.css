@@ -3,5 +3,8 @@
 }
 .temperature-extremes .temperature-extremes-icon {
   font-size: 2rem;
-  color: red;
+  color: firebrick;
+}
+.temperature-extremes .temperature-extremes-icon:hover {
+  cursor: pointer;
 }

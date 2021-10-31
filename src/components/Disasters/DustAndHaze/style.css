@@ -3,5 +3,8 @@
 }
 .dust-and-haze .dust-and-haze-icon {
   font-size: 2rem;
-  color: red;
+  color: #ff8945;
+}
+.dust-and-haze .dust-and-haze-icon:hover {
+  cursor: pointer;
 }

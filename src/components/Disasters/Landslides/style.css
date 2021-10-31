@@ -3,5 +3,8 @@
 }
 .landslides .landslides-icon {
   font-size: 2rem;
-  color: red;
+  color: #fca000;
+}
+.landslides .landslides-icon:hover {
+  cursor: pointer;
 }

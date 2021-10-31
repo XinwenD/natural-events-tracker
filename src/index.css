@@ -13,7 +13,7 @@
 @import url("components/Disasters/Snow/style.css");
 @import url("components/Disasters/TemperatureExtremes/style.css");
 @import url("components/Disasters/Manmade/style.css");
-
+@import url("components/LocationInfo/style.css");
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -30,22 +30,4 @@ body .app-container {
 .wildfire-icon {
   font-size: 10px;
   color: red;
-}
-.location-info {
-  position: absolute;
-  top: 80px;
-  right: 50;
-  width: 400px;
-  min-height: 200px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  font-size: 18px;
-}
-.location-info ul {
-  list-style-type: none;
-  padding: 0;
-}
-.location-info li {
-  padding: 5px 0;
 }

@@ -1,4 +1,10 @@
+.volcanoes {
+  display: none;
+}
 .volcanoes .volcanoes-icon {
   font-size: 2rem;
-  color: blue;
+  color: firebrick;
+}
+.volcanoes .volcanoes-icon:hover {
+  cursor: pointer;
 }

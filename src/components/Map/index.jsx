@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import GoogleMapReact from "google-map-react";
 import Drought from "../Disasters/Drought";
 import DustAndHaze from "../Disasters/DustAndHaze";
@@ -38,7 +38,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case DROUGHT:
         return (
           <Drought
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -47,7 +47,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case DUST_AND_HAZE:
         return (
           <DustAndHaze
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -56,7 +56,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case WILDFIRE:
         return (
           <Wildfire
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -65,7 +65,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case FLOODS:
         return (
           <Floods
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -74,7 +74,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case SEVERE_STORMS:
         return (
           <SevereStorms
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -83,7 +83,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case VOLCANOES:
         return (
           <Volcanoes
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -92,7 +92,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case WATER_COLOR:
         return (
           <WaterColor
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -101,7 +101,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case LANDSLIDES:
         return (
           <Landslides
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -110,7 +110,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case SEA_AND_LAKE_ICE:
         return (
           <SeaAndLakeIce
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -119,7 +119,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case EARTHQUAKES:
         return (
           <Earthquakes
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -128,7 +128,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case SNOW:
         return (
           <Snow
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -137,7 +137,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case TEMPERATURE_EXTREMES:
         return (
           <TemperatureExtreme
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -146,7 +146,7 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
       case MANMADE:
         return (
           <Manmade
-            key={index}
+            key={ev.id}
             lat={ev.geometries[0].coordinates[1]}
             lng={ev.geometries[0].coordinates[0]}
             onClick={() => setLocationInfo({ id: ev.id, title: ev.title })}
@@ -158,12 +158,18 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
     return null;
   });
 
+  const removeInfo = () => {
+    // const info = document.querySelector(".location-info");
+    // info.style.display = "none";
+  };
+
   return (
     <div className="map-container">
       <GoogleMapReact
         bootstrapURLKeys={{ key: "AIzaSyAUArUrNRbUQAxFqrTaFMWgsYxWMBPFX08" }}
         defaultCenter={center}
         defaultZoom={zoom}
+        onClick={removeInfo}
       >
         {markers}
       </GoogleMapReact>
@@ -174,10 +180,10 @@ const Map = ({ eventData, categoryData, center, zoom }) => {
 
 Map.defaultProps = {
   center: {
-    lat: 42.3265,
-    lng: -122.8756,
+    lat: 21.3265,
+    lng: -172.8756,
   },
-  zoom: 6,
+  zoom: 0,
 };
 
 export default Map;

@@ -1,38 +1,157 @@
 .disaster-selector {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: 55px 1fr;
   position: absolute;
-  display: block;
   top: 100px;
   left: 50px;
   z-index: 100;
-  width: 300px;
-  max-height: 45px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 1rem;
-  padding: 10px;
-  overflow: hidden;
+  overflow-y: scroll;
+  max-height: 55px;
   transition: max-height 0.5s ease-out;
 }
-.disaster-selector:hover {
-  max-height: 500px;
-  transition: max-height 0.5s ease-in;
-  cursor: pointer;
+.disaster-selector .title-container {
+  grid-column: 1;
+  grid-row: 1;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  z-index: 120;
 }
-.disaster-selector h1 {
-  height: 21px;
-  margin: 13px 0;
+.disaster-selector .title-container h1 {
   font-size: large;
   color: white;
   text-align: center;
 }
-.disaster-selector .categories {
+.disaster-selector .disaster-container {
+  grid-column: 1;
+  grid-row: 2;
+  position: relative;
+}
+.disaster-selector .disaster-container .categories {
   margin-top: 20px;
   list-style-type: none;
   color: white;
   padding-left: 10px;
 }
-.disaster-selector .categories li {
+.disaster-selector .disaster-container .categories div li {
   padding: 1px 0;
 }
-.disaster-selector .categories li input {
+.disaster-selector .disaster-container .categories div li input {
   margin-right: 7px;
+}
+.disaster-selector .disaster-container .categories div span {
+  padding-right: 5px;
+}
+.disaster-selector .disaster-container .categories div span .drought-icon {
+  font-size: 1rem;
+  color: firebrick;
+}
+.disaster-selector .disaster-container .categories div span .drought-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .dust-icon {
+  font-size: 1rem;
+  color: #ff8945;
+}
+.disaster-selector .disaster-container .categories div span .dust-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .wildfire-icon {
+  font-size: 1rem;
+  color: firebrick;
+}
+.disaster-selector .disaster-container .categories div span .wildfire-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .flood-icon {
+  font-size: 1rem;
+  color: #00b1fc;
+}
+.disaster-selector .disaster-container .categories div span .flood-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .storm-icon {
+  font-size: 1rem;
+  color: #45bbff;
+}
+.disaster-selector .disaster-container .categories div span .storm-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .volcanoes-icon {
+  font-size: 1rem;
+  color: firebrick;
+}
+.disaster-selector .disaster-container .categories div span .volcanoes-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .water-icon {
+  font-size: 1rem;
+  color: #ef45ff;
+}
+.disaster-selector .disaster-container .categories div span .water-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .landslides-icon {
+  font-size: 1rem;
+  color: #fca000;
+}
+.disaster-selector .disaster-container .categories div span .landslides-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .sea-and-lake-ice-icon {
+  font-size: 1rem;
+  color: #0088ff;
+}
+.disaster-selector .disaster-container .categories div span .sea-and-lake-ice-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .earthquake-icon {
+  font-size: 1rem;
+  color: #d4ff45;
+}
+.disaster-selector .disaster-container .categories div span .earthquake-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .snow-icon {
+  font-size: 1rem;
+  color: #45c7ff;
+}
+.disaster-selector .disaster-container .categories div span .snow-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .temp-icon {
+  font-size: 1rem;
+  color: firebrick;
+}
+.disaster-selector .disaster-container .categories div span .temp-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div span .manmade-icon {
+  font-size: 1rem;
+  color: firebrick;
+}
+.disaster-selector .disaster-container .categories div span .manmade-icon:hover {
+  cursor: default;
+}
+.disaster-selector .disaster-container .categories div p {
+  display: none;
+  overflow: hidden;
+  padding-left: 10px;
+}
+.disaster-selector .disaster-container .categories div p span {
+  color: red;
+}
+.disaster-selector::-webkit-scrollbar {
+  width: 0;
+}
+.disaster-selector:hover {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+  cursor: pointer;
 }

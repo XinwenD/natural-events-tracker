@@ -3,5 +3,8 @@
 }
 .snow .snow-icon {
   font-size: 2rem;
-  color: red;
+  color: #45c7ff;
+}
+.snow .snow-icon:hover {
+  cursor: pointer;
 }

@@ -3,5 +3,8 @@
 }
 .drought .drought-icon {
   font-size: 2rem;
-  color: red;
+  color: firebrick;
+}
+.drought .drought-icon:hover {
+  cursor: pointer;
 }

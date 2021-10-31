@@ -3,5 +3,8 @@
 }
 .water-color .water-color-icon {
   font-size: 2rem;
-  color: red;
+  color: #ef45ff;
+}
+.water-color .water-color-icon:hover {
+  cursor: pointer;
 }

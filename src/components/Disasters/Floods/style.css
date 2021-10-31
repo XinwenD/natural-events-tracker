@@ -3,5 +3,8 @@
 }
 .floods .floods-icon {
   font-size: 2rem;
-  color: red;
+  color: #00b1fc;
+}
+.floods .floods-icon:hover {
+  cursor: pointer;
 }
